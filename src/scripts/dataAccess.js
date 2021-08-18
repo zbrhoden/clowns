@@ -1,3 +1,5 @@
+import { Reservation } from "./Reservations"
+
 const applicationState = {
     reservations: []
 }
@@ -39,5 +41,5 @@ export const fetchreservations = () => {
 }
 
 export const getreservations = () => {
-    return applicationState.requests.map(request => ({...request}))
+    return applicationState.reservations.map(reservation => ({...reservation}))
 }
